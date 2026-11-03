@@ -1,0 +1,21 @@
+{
+  "version": "M0-BA-scale-0.1-exploratory",
+  "panel": 7,
+  "n_training_people": 1364,
+  "years_per_fai_sd": 4.36084812362324,
+  "years_per_fai_point": 0.43608481236232405,
+  "scale_bootstrap_ci95": [
+    4.216894986387768,
+    4.4977922132988155
+  ],
+  "formula": "BA = RA_anchor + years_per_fai_sd * (M0_FAI - 50) / 10",
+  "RA_anchor_policy": "2025 CSV uses original long-table age; calculator uses supplied age or date-derived exact age unless RA_anchor supplied.",
+  "interpretation": "Conventional age-scale representation of M0, not an identified latent biological age. Coefficient sets units; not fitted to aging rate or health outcomes.",
+  "training_selection": "one baseline per train Oneid; valid M0-7; 20 <= exact_age < 40; pooled sexes",
+  "absolute_age_validated": false,
+  "reference_sha256": "c73a0b4371d102a93e56436946ae7495215ab99cdd64176b66a0ecf2c60fd269",
+  "sources": [
+    "https://pubmed.ncbi.nlm.nih.gov/3226152/",
+    "https://doi.org/10.1186/s12874-024-02181-x"
+  ]
+}

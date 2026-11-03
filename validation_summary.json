@@ -1,0 +1,16 @@
+{
+  "validation_date": "2026-11-03",
+  "unit_tests_passed": 5,
+  "unit_tests_failed": 0,
+  "private_data_end_to_end": {
+    "people": 2471,
+    "person_years": 8179,
+    "year_min": 2017,
+    "year_max": 2025,
+    "all_evaluated": true,
+    "missing_BA": 0,
+    "all_rows_matched_existing_results": true,
+    "max_abs_BA_difference": 0.0
+  },
+  "privacy": "Source participant-level data were used locally for verification and are not included in this package."
+}

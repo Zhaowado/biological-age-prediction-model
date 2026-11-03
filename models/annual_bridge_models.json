@@ -1,0 +1,758 @@
+{
+  "version": "1.0-annual-exploratory",
+  "formula": "BA = age_anchor + years_per_fai_point * (FAI - 50)",
+  "years_per_fai_point": 0.43608481236232405,
+  "assumed_reference_age": 29.00759883608442,
+  "sex_prior": {
+    "F": 0.5366568914956011,
+    "M": 0.4633431085043988
+  },
+  "bridge_models": {
+    "F|grip,vital,step,reach,balance,reaction": {
+      "sex": "F",
+      "observed_items": [
+        "grip",
+        "vital",
+        "step",
+        "reach",
+        "balance",
+        "reaction"
+      ],
+      "alpha": 0.1,
+      "intercept": 49.99006956033247,
+      "coef": [
+        3.838166279696684,
+        3.082227096191194,
+        3.1985822600341183,
+        3.5262909393335677,
+        1.914324147039833,
+        2.2221073077522613
+      ],
+      "validation_residual_q025_q975": [
+        -5.316775545646228,
+        6.680525864103619
+      ],
+      "training_n": 732,
+      "validation_n": 246,
+      "test_n": 252
+    },
+    "M|grip,vital,step,reach,balance,reaction": {
+      "sex": "M",
+      "observed_items": [
+        "grip",
+        "vital",
+        "step",
+        "reach",
+        "balance",
+        "reaction"
+      ],
+      "alpha": 0.1,
+      "intercept": 48.629666899469164,
+      "coef": [
+        3.7067460107040335,
+        3.5368811691791917,
+        3.6770718041447763,
+        3.510910933925976,
+        2.1187662095672706,
+        2.269612398497332
+      ],
+      "validation_residual_q025_q975": [
+        -5.1762158855994995,
+        6.643145616003364
+      ],
+      "training_n": 632,
+      "validation_n": 210,
+      "test_n": 219
+    },
+    "F|grip": {
+      "sex": "F",
+      "observed_items": [
+        "grip"
+      ],
+      "alpha": 10.0,
+      "intercept": 50.32762240233492,
+      "coef": [
+        5.604162177326946
+      ],
+      "validation_residual_q025_q975": [
+        -14.854868898928016,
+        14.872046111216983
+      ],
+      "training_n": 732,
+      "validation_n": 246,
+      "test_n": 252
+    },
+    "M|vital": {
+      "sex": "M",
+      "observed_items": [
+        "vital"
+      ],
+      "alpha": 10.0,
+      "intercept": 49.48520662367322,
+      "coef": [
+        5.099352320955316
+      ],
+      "validation_residual_q025_q975": [
+        -16.795352678939373,
+        15.088778779915032
+      ],
+      "training_n": 632,
+      "validation_n": 210,
+      "test_n": 219
+    },
+    "F|grip,jump,vital,reach,balance,reaction": {
+      "sex": "F",
+      "observed_items": [
+        "grip",
+        "jump",
+        "vital",
+        "reach",
+        "balance",
+        "reaction"
+      ],
+      "alpha": 100.0,
+      "intercept": 49.91611378571294,
+      "coef": [
+        2.982963240536374,
+        2.928120077749091,
+        3.1201649710061847,
+        3.2842601613792604,
+        1.6122329650485578,
+        1.712931894686587
+      ],
+      "validation_residual_q025_q975": [
+        -8.700206207638685,
+        4.929466469322526
+      ],
+      "training_n": 732,
+      "validation_n": 246,
+      "test_n": 252
+    },
+    "M|grip,vital,reach,balance,reaction": {
+      "sex": "M",
+      "observed_items": [
+        "grip",
+        "vital",
+        "reach",
+        "balance",
+        "reaction"
+      ],
+      "alpha": 0.1,
+      "intercept": 49.41804614081984,
+      "coef": [
+        3.6913700645655143,
+        3.846355075071323,
+        3.61266189944227,
+        2.4555634219086793,
+        1.9843414170600917
+      ],
+      "validation_residual_q025_q975": [
+        -10.055889009427533,
+        7.996684730506267
+      ],
+      "training_n": 632,
+      "validation_n": 210,
+      "test_n": 219
+    },
+    "M|grip": {
+      "sex": "M",
+      "observed_items": [
+        "grip"
+      ],
+      "alpha": 10.0,
+      "intercept": 49.81239873793286,
+      "coef": [
+        6.0221301392879525
+      ],
+      "validation_residual_q025_q975": [
+        -15.963549552409596,
+        12.990159583478261
+      ],
+      "training_n": 632,
+      "validation_n": 210,
+      "test_n": 219
+    },
+    "M|grip,jump,vital,step,reach,balance": {
+      "sex": "M",
+      "observed_items": [
+        "grip",
+        "jump",
+        "vital",
+        "step",
+        "reach",
+        "balance"
+      ],
+      "alpha": 10.0,
+      "intercept": 49.3529264709088,
+      "coef": [
+        3.5422123047291296,
+        3.6876404967538936,
+        3.601962289433277,
+        3.233698282378121,
+        3.493963257326175,
+        2.0710849047230764
+      ],
+      "validation_residual_q025_q975": [
+        -3.0856759722747173,
+        3.0676803813329907
+      ],
+      "training_n": 632,
+      "validation_n": 210,
+      "test_n": 219
+    },
+    "M|grip,vital": {
+      "sex": "M",
+      "observed_items": [
+        "grip",
+        "vital"
+      ],
+      "alpha": 0.1,
+      "intercept": 49.464035924994896,
+      "coef": [
+        4.860956543878115,
+        3.8090677423195065
+      ],
+      "validation_residual_q025_q975": [
+        -12.352790802121632,
+        12.040390940632937
+      ],
+      "training_n": 632,
+      "validation_n": 210,
+      "test_n": 219
+    },
+    "M|grip,jump,vital,reach,balance,reaction": {
+      "sex": "M",
+      "observed_items": [
+        "grip",
+        "jump",
+        "vital",
+        "reach",
+        "balance",
+        "reaction"
+      ],
+      "alpha": 10.0,
+      "intercept": 49.78921968805115,
+      "coef": [
+        3.332994694683786,
+        3.7275948955622678,
+        3.6360094091416872,
+        3.441706617939387,
+        1.9491096695063461,
+        1.3936134595070577
+      ],
+      "validation_residual_q025_q975": [
+        -8.12811526074377,
+        5.163404003668404
+      ],
+      "training_n": 632,
+      "validation_n": 210,
+      "test_n": 219
+    },
+    "M|grip,jump,vital,step,balance,reaction": {
+      "sex": "M",
+      "observed_items": [
+        "grip",
+        "jump",
+        "vital",
+        "step",
+        "balance",
+        "reaction"
+      ],
+      "alpha": 10.0,
+      "intercept": 48.7012608232193,
+      "coef": [
+        4.030289479967706,
+        3.4790435796988013,
+        3.2339516236479753,
+        3.4302733184048244,
+        1.966759443849193,
+        1.957281236156831
+      ],
+      "validation_residual_q025_q975": [
+        -5.545240809786976,
+        7.7576868020085845
+      ],
+      "training_n": 632,
+      "validation_n": 210,
+      "test_n": 219
+    },
+    "F|grip,jump,step,reach,balance,reaction": {
+      "sex": "F",
+      "observed_items": [
+        "grip",
+        "jump",
+        "step",
+        "reach",
+        "balance",
+        "reaction"
+      ],
+      "alpha": 1.0,
+      "intercept": 50.115899950449666,
+      "coef": [
+        4.173086748097982,
+        3.1146649993823954,
+        3.4687140173515507,
+        3.5996408290121886,
+        1.5482244874550852,
+        1.8351161932876623
+      ],
+      "validation_residual_q025_q975": [
+        -7.349415350896713,
+        5.592125344114957
+      ],
+      "training_n": 732,
+      "validation_n": 246,
+      "test_n": 252
+    },
+    "F|grip,vital,reaction": {
+      "sex": "F",
+      "observed_items": [
+        "grip",
+        "vital",
+        "reaction"
+      ],
+      "alpha": 100.0,
+      "intercept": 49.912998489170896,
+      "coef": [
+        3.7821614404604462,
+        3.165918587256735,
+        3.1108614186192827
+      ],
+      "validation_residual_q025_q975": [
+        -12.21317790321139,
+        11.765408402356881
+      ],
+      "training_n": 732,
+      "validation_n": 246,
+      "test_n": 252
+    },
+    "M|jump,step,balance": {
+      "sex": "M",
+      "observed_items": [
+        "jump",
+        "step",
+        "balance"
+      ],
+      "alpha": 10.0,
+      "intercept": 49.57201229480572,
+      "coef": [
+        4.977538947378153,
+        3.5037236016076365,
+        2.09888072871399
+      ],
+      "validation_residual_q025_q975": [
+        -14.740573916388083,
+        12.50838565639977
+      ],
+      "training_n": 632,
+      "validation_n": 210,
+      "test_n": 219
+    },
+    "M|grip,jump,vital,step": {
+      "sex": "M",
+      "observed_items": [
+        "grip",
+        "jump",
+        "vital",
+        "step"
+      ],
+      "alpha": 10.0,
+      "intercept": 49.110247977928246,
+      "coef": [
+        4.277032600650502,
+        4.402936594052797,
+        3.303909893777857,
+        3.419283830222481
+      ],
+      "validation_residual_q025_q975": [
+        -8.275110151933704,
+        8.769822581000925
+      ],
+      "training_n": 632,
+      "validation_n": 210,
+      "test_n": 219
+    },
+    "F|grip,vital,step,reaction": {
+      "sex": "F",
+      "observed_items": [
+        "grip",
+        "vital",
+        "step",
+        "reaction"
+      ],
+      "alpha": 100.0,
+      "intercept": 49.91138230001157,
+      "coef": [
+        3.949517757540063,
+        3.0230942998203525,
+        3.096166040333233,
+        3.031866739616321
+      ],
+      "validation_residual_q025_q975": [
+        -8.80822145215928,
+        10.214266087843473
+      ],
+      "training_n": 732,
+      "validation_n": 246,
+      "test_n": 252
+    },
+    "F|grip,jump,vital,step,reach,reaction": {
+      "sex": "F",
+      "observed_items": [
+        "grip",
+        "jump",
+        "vital",
+        "step",
+        "reach",
+        "reaction"
+      ],
+      "alpha": 10.0,
+      "intercept": 49.986450941789165,
+      "coef": [
+        3.2965602970825603,
+        3.4165613148786966,
+        3.2234544921626354,
+        3.3152305321128432,
+        3.3536581322621823,
+        2.164964260802035
+      ],
+      "validation_residual_q025_q975": [
+        -2.445625100154884,
+        3.718884939015264
+      ],
+      "training_n": 732,
+      "validation_n": 246,
+      "test_n": 252
+    },
+    "F|grip,jump,vital,step,balance,reaction": {
+      "sex": "F",
+      "observed_items": [
+        "grip",
+        "jump",
+        "vital",
+        "step",
+        "balance",
+        "reaction"
+      ],
+      "alpha": 10.0,
+      "intercept": 49.696978443296786,
+      "coef": [
+        3.657451796829004,
+        3.469373252264867,
+        3.577995725496686,
+        3.582722993991274,
+        1.7544925113793763,
+        2.050050666943182
+      ],
+      "validation_residual_q025_q975": [
+        -5.133628601060672,
+        6.938887573610426
+      ],
+      "training_n": 732,
+      "validation_n": 246,
+      "test_n": 252
+    },
+    "F|vital": {
+      "sex": "F",
+      "observed_items": [
+        "vital"
+      ],
+      "alpha": 10.0,
+      "intercept": 49.757254051894236,
+      "coef": [
+        5.200598088817847
+      ],
+      "validation_residual_q025_q975": [
+        -17.15992998006128,
+        14.476567902738822
+      ],
+      "training_n": 732,
+      "validation_n": 246,
+      "test_n": 252
+    },
+    "F|grip,jump,vital,step,reach,balance": {
+      "sex": "F",
+      "observed_items": [
+        "grip",
+        "jump",
+        "vital",
+        "step",
+        "reach",
+        "balance"
+      ],
+      "alpha": 10.0,
+      "intercept": 49.96384394493665,
+      "coef": [
+        3.5266928647676834,
+        3.510849278162035,
+        3.369152398554557,
+        3.3013545080005344,
+        3.467174838715838,
+        2.0465435253623383
+      ],
+      "validation_residual_q025_q975": [
+        -2.8262819720543044,
+        3.989127010813763
+      ],
+      "training_n": 732,
+      "validation_n": 246,
+      "test_n": 252
+    },
+    "M|grip,jump,vital,step,reach,reaction": {
+      "sex": "M",
+      "observed_items": [
+        "grip",
+        "jump",
+        "vital",
+        "step",
+        "reach",
+        "reaction"
+      ],
+      "alpha": 0.1,
+      "intercept": 48.99735423153605,
+      "coef": [
+        3.342760036245813,
+        3.679247888257759,
+        3.231049614346603,
+        3.5309438495516883,
+        3.5699047287164376,
+        2.1346048640525632
+      ],
+      "validation_residual_q025_q975": [
+        -2.330844139201783,
+        3.599828380319832
+      ],
+      "training_n": 632,
+      "validation_n": 210,
+      "test_n": 219
+    },
+    "F|grip,vital,balance,reaction": {
+      "sex": "F",
+      "observed_items": [
+        "grip",
+        "vital",
+        "balance",
+        "reaction"
+      ],
+      "alpha": 10.0,
+      "intercept": 49.77936667296953,
+      "coef": [
+        3.9953331951344366,
+        3.541713735819805,
+        2.0997479150641127,
+        2.734210236138847
+      ],
+      "validation_residual_q025_q975": [
+        -11.604376755498151,
+        10.13617554341798
+      ],
+      "training_n": 732,
+      "validation_n": 246,
+      "test_n": 252
+    },
+    "F|grip,vital,reach,balance,reaction": {
+      "sex": "F",
+      "observed_items": [
+        "grip",
+        "vital",
+        "reach",
+        "balance",
+        "reaction"
+      ],
+      "alpha": 10.0,
+      "intercept": 50.00044172722929,
+      "coef": [
+        3.5822711834121517,
+        3.205306460206018,
+        3.771737855981227,
+        1.9574049228746178,
+        2.249568567449626
+      ],
+      "validation_residual_q025_q975": [
+        -8.986436898121632,
+        6.655801501128027
+      ],
+      "training_n": 732,
+      "validation_n": 246,
+      "test_n": 252
+    },
+    "M|grip,vital,reach,reaction": {
+      "sex": "M",
+      "observed_items": [
+        "grip",
+        "vital",
+        "reach",
+        "reaction"
+      ],
+      "alpha": 0.1,
+      "intercept": 49.374789087449685,
+      "coef": [
+        3.630086696473577,
+        3.6185142556598144,
+        3.8718615340014795,
+        2.6727411657609434
+      ],
+      "validation_residual_q025_q975": [
+        -10.308975703136326,
+        9.01622802659928
+      ],
+      "training_n": 632,
+      "validation_n": 210,
+      "test_n": 219
+    },
+    "F|grip,vital,step,balance,reaction": {
+      "sex": "F",
+      "observed_items": [
+        "grip",
+        "vital",
+        "step",
+        "balance",
+        "reaction"
+      ],
+      "alpha": 10.0,
+      "intercept": 49.785608713716734,
+      "coef": [
+        4.212675753345467,
+        3.349881575080066,
+        3.473097675624414,
+        2.0246670226393926,
+        2.654191954120694
+      ],
+      "validation_residual_q025_q975": [
+        -8.15165006163036,
+        9.975494706573677
+      ],
+      "training_n": 732,
+      "validation_n": 246,
+      "test_n": 252
+    },
+    "F|grip,jump,vital,reach,reaction": {
+      "sex": "F",
+      "observed_items": [
+        "grip",
+        "jump",
+        "vital",
+        "reach",
+        "reaction"
+      ],
+      "alpha": 100.0,
+      "intercept": 50.00964347337015,
+      "coef": [
+        2.9805906822594372,
+        3.0475423486530246,
+        3.0675613001837094,
+        3.3446606046972613,
+        2.1445577264942117
+      ],
+      "validation_residual_q025_q975": [
+        -9.073933925207422,
+        6.093856154284604
+      ],
+      "training_n": 732,
+      "validation_n": 246,
+      "test_n": 252
+    },
+    "M|grip,jump,vital,reach,reaction": {
+      "sex": "M",
+      "observed_items": [
+        "grip",
+        "jump",
+        "vital",
+        "reach",
+        "reaction"
+      ],
+      "alpha": 10.0,
+      "intercept": 49.78852655197887,
+      "coef": [
+        3.2591861461389646,
+        4.051419241588085,
+        3.4480270340914454,
+        3.629807264547905,
+        1.8686230835879716
+      ],
+      "validation_residual_q025_q975": [
+        -8.509841592506854,
+        6.2238636649325
+      ],
+      "training_n": 632,
+      "validation_n": 210,
+      "test_n": 219
+    },
+    "F|grip,jump,reach,reaction": {
+      "sex": "F",
+      "observed_items": [
+        "grip",
+        "jump",
+        "reach",
+        "reaction"
+      ],
+      "alpha": 100.0,
+      "intercept": 50.204271654102214,
+      "coef": [
+        3.68130171867436,
+        2.88433585770193,
+        3.5897604087308546,
+        2.273078251624936
+      ],
+      "validation_residual_q025_q975": [
+        -12.49459929238445,
+        8.691726009513108
+      ],
+      "training_n": 732,
+      "validation_n": 246,
+      "test_n": 252
+    },
+    "M|grip,jump,vital,balance,reaction": {
+      "sex": "M",
+      "observed_items": [
+        "grip",
+        "jump",
+        "vital",
+        "balance",
+        "reaction"
+      ],
+      "alpha": 10.0,
+      "intercept": 49.46516496766452,
+      "coef": [
+        4.000920637990228,
+        3.8533311308066405,
+        3.497033278785984,
+        2.2339917218396907,
+        1.645112228577238
+      ],
+      "validation_residual_q025_q975": [
+        -9.352825897657388,
+        8.477083149316602
+      ],
+      "training_n": 632,
+      "validation_n": 210,
+      "test_n": 219
+    },
+    "M|grip,vital,step,balance,reaction": {
+      "sex": "M",
+      "observed_items": [
+        "grip",
+        "vital",
+        "step",
+        "balance",
+        "reaction"
+      ],
+      "alpha": 10.0,
+      "intercept": 48.28788981811018,
+      "coef": [
+        4.3531004061899115,
+        3.3623063446398564,
+        3.7040857336976187,
+        2.395769444980681,
+        2.5361685257893787
+      ],
+      "validation_residual_q025_q975": [
+        -7.79829298714397,
+        11.630510933401624
+      ],
+      "training_n": 632,
+      "validation_n": 210,
+      "test_n": 219
+    }
+  }
+}
